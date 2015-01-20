@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark">              
+    
+    <LinearLayout 
+    android:orientation="vertical"
+    android:layout_width="240dp"
+    android:layout_height="wrap_content"  
+    android:layout_centerInParent="true"     
+    android:background="@android:color/background_light">           
+    
+	    <ImageView
+	        android:src="@android:drawable/ic_secure"
+	        android:layout_width="match_parent"
+	        android:layout_height="64dp"
+	        android:scaleType="center"
+	        android:background="#FFFFBB33"
+	        android:contentDescription="@string/app_name" />
+	    
+	    <EditText
+	        android:id="@+id/txtUsername"
+	        android:inputType="textPersonName"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textAppearance="?android:attr/textAppearanceLarge"
+	        android:hint="@string/username" />
+	    
+	    
+	    <EditText
+	        android:id="@+id/txtPassword"
+	        android:inputType="textPassword"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="20dp"
+	        android:textAppearance="?android:attr/textAppearanceLarge"
+	        android:hint="@string/password"/>
+	    
+	    <LinearLayout android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal">
+	        
+	        <Button android:id="@+id/btnClose"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"	            
+	            android:text="@string/close"
+	            android:onClick="doLoginClick"
+	            style="?android:attr/buttonBarButtonStyle"
+	            />
+	        
+	        <Button android:id="@+id/btnLogin"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:text="@string/login"
+	            android:onClick="doLoginClick"
+				style="?android:attr/buttonBarButtonStyle"
+	            />
+	    </LinearLayout>
+	</LinearLayout>
+</RelativeLayout>

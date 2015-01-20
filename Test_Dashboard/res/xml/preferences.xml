@@ -1,0 +1,55 @@
+<!-- <PreferenceScreen  xmlns:android="http://schemas.android.com/apk/res/android">
+    opens a subscreen of settings
+    <PreferenceScreen
+        android:key="button_voicemail_category_key"
+        android:title="voicemail"
+        android:persistent="false">
+        <ListPreference
+            android:key="button_voicemail_provider_key"
+            android:title="voicemail_provider"/>
+        opens another nested subscreen
+        <PreferenceScreen
+            android:key="button_voicemail_setting_key"
+            android:title="voicemail_settings"
+            android:persistent="false">
+            ...
+        </PreferenceScreen>
+        <RingtonePreference
+            android:key="button_voicemail_ringtone_key"
+            android:title="voicemail_ringtone_title"
+            android:ringtoneType="notification"/>
+        ...
+    </PreferenceScreen>
+    ...
+</PreferenceScreen> -->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+     <PreferenceCategory
+           android:summary=""
+           android:title="Main Setting">
+           <CheckBoxPreference
+                 android:key="main"
+                 android:defaultValue="true"
+                 android:summary=""
+                 android:title="Push Notification" 
+          />
+          <CheckBoxPreference
+                android:key="firstDependent"
+                android:title="Do not disturb"
+                android:summary=""
+                android:defaultValue="false"
+                
+                
+          />
+        <!--   <CheckBoxPreference
+                android:key="secondDependent"
+                android:summary="summary_secondDependent"
+                android:title="title_secondDependent"
+                android:dependency="main"
+          /> -->
+          
+    </PreferenceCategory>
+    
+     
+<!--Any other categories include here-->
+</PreferenceScreen>

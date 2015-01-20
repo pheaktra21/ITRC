@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    
+    <!-- Editext for Search -->
+    <EditText android:id="@+id/txtSearch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/search_hint"
+        android:inputType="textVisiblePassword"/>    
+    
+    <!-- Main ListView
+         Always give id value as list(@android:id/list)
+    -->
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtSearch"/>
+ 
+    <Button android:id="@+id/btnViewAllFloors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/view_all_floors"
+        android:visibility="gone"/>
+    
+</RelativeLayout>

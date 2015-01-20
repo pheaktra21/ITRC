@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/home_btn_feature1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            
+			style="?android:attr/buttonBarButtonStyle"
+            android:text="수면상태" />
+
+        <Button
+            android:id="@+id/home_btn_feature2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            
+            style="?android:attr/buttonBarButtonStyle"
+            android:text="화장실이용패턴" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/home_btn_feature3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            
+            style="?android:attr/buttonBarButtonStyle"
+            android:text="병실온도" />
+
+        <Button
+            android:id="@+id/home_btn_feature4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            
+            style="?android:attr/buttonBarButtonStyle"
+            android:text="환자위치" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/home_btn_feature5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            
+            style="?android:attr/buttonBarButtonStyle"
+            android:text="낙상통계" />
+
+        <Button
+            android:id="@+id/home_btn_feature6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            
+            style="?android:attr/buttonBarButtonStyle"
+            android:text="이잘종계" />
+    </RelativeLayout>
+</LinearLayout>
